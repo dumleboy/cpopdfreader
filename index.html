@@ -15,7 +15,7 @@
         .container {
             text-align: center;
         }
-        input[type="file"] {
+        input[type="text"], input[type="file"] {
             margin: 20px 0;
         }
         button {
@@ -35,8 +35,7 @@
 <body>
     <div class="container">
         <h1>Insert PDF to read</h1>
-        <input type="file" id="pdfFile" accept=".pdf">
-        <br>
+        <input type="text" id="pdfUrl" placeholder="Enter PDF URL"><br>
         <button onclick="openPDF()">Open PDF</button>
         <div id="pdfViewer"></div>
     </div>
